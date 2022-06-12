@@ -14,10 +14,14 @@ def substrings(string,dictionary)
 
     count = string_array.count { |x| x.include?(i)}
     count_array.push(count)
+    count_array.delete(0)
   end
 
-  
+  puts "the matching elements will be : #{match_array}"
+  puts "the number of times they aappeared is : #{count_array}"
 end
+
+substrings("below",dictionary)
 
 
 
